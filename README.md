@@ -6,7 +6,10 @@ This folder contains the GitHub Pages website for Fluent Bot.
 
 - `index.html` - Landing page with app installation, features, and pricing
 - `privacy.html` - Privacy policy
+- `terms.html` - Terms of Service
+- `subprocessors.html` - Sub-processors list (third-party data processors)
 - `support.html` - Support and FAQ page
+- `logo.png` - App logo
 
 ## Setting Up GitHub Pages
 
@@ -71,17 +74,22 @@ Once GitHub Pages is live, use these URLs when submitting your app:
 
 1. **Installation Landing Page URL:**
    ```
-   https://<your-username>.github.io/<repo-name>/
+   https://viniciusamaraal.github.io/<repo-name>/
    ```
 
 2. **Privacy Policy URL:**
    ```
-   https://<your-username>.github.io/<repo-name>/privacy.html
+   https://viniciusamaraal.github.io/<repo-name>/privacy.html
    ```
 
-3. **App Support URL:**
+3. **Terms of Service URL:**
    ```
-   https://<your-username>.github.io/<repo-name>/support.html
+   https://viniciusamaraal.github.io/<repo-name>/terms.html
+   ```
+
+4. **App Support URL:**
+   ```
+   https://viniciusamaraal.github.io/<repo-name>/support.html
    ```
 
 ## Current Version
