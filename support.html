@@ -174,6 +174,7 @@
 <body>
     <header>
         <div class="container">
+            <img src="logo.png" alt="Fluent Bot Logo" style="height: 60px; margin-bottom: 15px;">
             <h1>Support Center</h1>
             <p>Get help with Fluent Bot</p>
         </div>
@@ -188,7 +189,7 @@
             <ol>
                 <li><strong>Install the app</strong> to your Slack workspace</li>
                 <li><strong>Configure your preferences</strong> using <code>/fluent-config</code></li>
-                <li><strong>Start using</strong> the bot with <code>/fluent</code> or <code>/fluent-translate</code></li>
+                <li><strong>Start using</strong> commands like <code>/fluent</code>, <code>/rewrite</code>, or <code>/formal</code></li>
             </ol>
 
             <h2>Available Commands</h2>
@@ -196,21 +197,47 @@
             <div class="commands-grid">
                 <div class="command-card">
                     <code>/fluent &lt;text&gt;</code>
-                    <p>Main command for AI chat and translation. Just type naturally and Fluent Bot will understand your intent.</p>
+                    <p>Main command for AI chat and translation. Auto-detects language and translates to your preferred language.</p>
                     <p><strong>Examples:</strong></p>
                     <ul>
-                        <li>"Translate this to Spanish: Hello"</li>
-                        <li>"What's the weather like?"</li>
-                        <li>"Help me write an email"</li>
+                        <li><code>/fluent Hola, ¿cómo estás?</code></li>
+                        <li><code>/fluent What's the capital of France?</code></li>
                     </ul>
                 </div>
 
                 <div class="command-card">
-                    <code>/fluent-translate &lt;text&gt;</code>
-                    <p>Direct translation to your configured primary language.</p>
+                    <code>/fluent-draft &lt;text&gt;</code>
+                    <p>Opens a draft modal where you can review and edit the translation before posting to the channel.</p>
                     <p><strong>Example:</strong></p>
                     <ul>
-                        <li><code>/fluent-translate Hello, how are you?</code></li>
+                        <li><code>/fluent-draft Bonjour le monde</code></li>
+                    </ul>
+                </div>
+
+                <div class="command-card">
+                    <code>/rewrite &lt;text&gt;</code>
+                    <p>Rewrite English text to improve clarity and style while maintaining the same meaning.</p>
+                    <p><strong>Example:</strong></p>
+                    <ul>
+                        <li><code>/rewrite i think maybe we should try this</code></li>
+                    </ul>
+                </div>
+
+                <div class="command-card">
+                    <code>/formal &lt;text&gt;</code>
+                    <p>Transform casual English into formal, professional language.</p>
+                    <p><strong>Example:</strong></p>
+                    <ul>
+                        <li><code>/formal hey can u send that report?</code></li>
+                    </ul>
+                </div>
+
+                <div class="command-card">
+                    <code>/casual &lt;text&gt;</code>
+                    <p>Convert formal English into casual, friendly language.</p>
+                    <p><strong>Example:</strong></p>
+                    <ul>
+                        <li><code>/casual Please kindly forward the documentation</code></li>
                     </ul>
                 </div>
 
@@ -219,6 +246,10 @@
                     <p>Open the configuration modal to set your language preferences and AI provider.</p>
                 </div>
             </div>
+
+            <p style="margin-top: 20px; color: #666; font-style: italic; text-align: center;">
+                💡 <strong>Pro Tip:</strong> All translation commands have <code>-draft</code> versions (e.g., <code>/rewrite-draft</code>, <code>/formal-draft</code>, <code>/casual-draft</code>) to review before posting!
+            </p>
 
             <h2>Frequently Asked Questions</h2>
 
@@ -304,8 +335,7 @@
             <div class="contact-box">
                 <h2>Still Need Help?</h2>
                 <p>We're here to help! Contact us:</p>
-                <p><strong>📧 Email:</strong> <a href="mailto:support@fluent-bot.com">support@fluent-bot.com</a></p>
-                <p><strong>🐙 GitHub:</strong> <a href="https://github.com/vamaral/fluent-bot/issues" target="_blank">Report an Issue</a></p>
+                <p><strong>📧 Email:</strong> <a href="mailto:k19tech@gmail.com">k19tech@gmail.com</a></p>
                 <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.9;">We typically respond within 24 hours (business days)</p>
             </div>
 
@@ -313,7 +343,6 @@
             <ul>
                 <li><a href="index.html">Home Page</a></li>
                 <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="https://github.com/vamaral/fluent-bot" target="_blank">GitHub Repository</a></li>
                 <li><a href="https://www.anthropic.com/claude" target="_blank">Learn about Claude AI</a></li>
                 <li><a href="https://openai.com/gpt-4" target="_blank">Learn about GPT-4</a></li>
             </ul>

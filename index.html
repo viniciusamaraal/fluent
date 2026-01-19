@@ -224,7 +224,8 @@
 <body>
     <header>
         <div class="container">
-            <h1>🌍 Fluent Bot</h1>
+            <img src="logo.png" alt="Fluent Bot Logo" style="height: 80px; margin-bottom: 20px;">
+            <h1>Fluent Bot</h1>
             <p>AI-powered translation and conversation in Slack. Break language barriers instantly.</p>
         </div>
     </header>
@@ -260,18 +261,37 @@
 
             <div class="command-item">
                 <code>/fluent &lt;text&gt;</code>
-                <p>Chat with AI or get instant translations. Use natural language for any task.</p>
+                <p>Chat with AI or get instant translations. Auto-detects language and translates to your preferred language.</p>
             </div>
 
             <div class="command-item">
-                <code>/fluent-translate &lt;text&gt;</code>
-                <p>Translate text to your preferred language. Configure languages in settings.</p>
+                <code>/fluent-draft &lt;text&gt;</code>
+                <p>Open a draft modal to review and edit before posting. Perfect for important messages.</p>
+            </div>
+
+            <div class="command-item">
+                <code>/rewrite &lt;text&gt;</code>
+                <p>Rewrite text from English to improve clarity and style while keeping the same meaning.</p>
+            </div>
+
+            <div class="command-item">
+                <code>/formal &lt;text&gt;</code>
+                <p>Transform casual English text into formal, professional language.</p>
+            </div>
+
+            <div class="command-item">
+                <code>/casual &lt;text&gt;</code>
+                <p>Convert formal English text into casual, friendly language.</p>
             </div>
 
             <div class="command-item">
                 <code>/fluent-config</code>
                 <p>Configure your preferences: primary languages and AI provider selection.</p>
             </div>
+
+            <p style="margin-top: 20px; color: #666; font-style: italic;">
+                💡 Tip: All commands also have <code>-draft</code> versions (e.g., <code>/rewrite-draft</code>) to review before posting!
+            </p>
         </div>
 
         <div class="pricing">
