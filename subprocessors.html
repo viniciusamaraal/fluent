@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub-Processors - Fluent Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 50px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4A154B;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .processor-card {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .processor-card h3 {
+            margin-top: 0;
+            color: #4A154B;
+        }
+
+        .processor-info {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .processor-info dt {
+            font-weight: 600;
+            color: #666;
+        }
+
+        .processor-info dd {
+            margin: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #4A154B;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Fluent Bot Logo" style="height: 60px; margin-bottom: 15px;">
+            <h1>Sub-Processors</h1>
+            <p>Third-party service providers that process customer data</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <p class="last-updated">Last Updated: January 19, 2025</p>
+
+            <h2>Overview</h2>
+
+            <p>Fluent Bot uses carefully selected third-party sub-processors to provide our services. This page lists all sub-processors that may access or process customer data, including the type of data processed and the purpose of processing.</p>
+
+            <p>We are committed to:</p>
+            <ul>
+                <li>Using only reputable, security-conscious sub-processors</li>
+                <li>Ensuring all sub-processors meet appropriate data protection standards</li>
+                <li>Maintaining transparency about how your data is processed</li>
+                <li>Notifying customers of changes to our sub-processor list</li>
+            </ul>
+
+            <h2>Active Sub-Processors</h2>
+
+            <div class="processor-card">
+                <h3>1. Anthropic, PBC</h3>
+                <dl class="processor-info">
+                    <dt>Website:</dt>
+                    <dd><a href="https://www.anthropic.com" target="_blank">anthropic.com</a></dd>
+
+                    <dt>Service:</dt>
+                    <dd>AI Language Model Processing (Claude)</dd>
+
+                    <dt>Data Processed:</dt>
+                    <dd>Message content submitted by users for translation, rewriting, or AI chat</dd>
+
+                    <dt>Purpose:</dt>
+                    <dd>Provides AI-powered language translation, text transformation, and conversational AI capabilities using Claude models (Sonnet 4.5, Haiku 3.5)</dd>
+
+                    <dt>Data Location:</dt>
+                    <dd>United States</dd>
+
+                    <dt>Retention:</dt>
+                    <dd>API requests are not stored by Fluent Bot. Anthropic retains data for up to 30 days for trust and safety purposes per their commercial terms</dd>
+
+                    <dt>Privacy Policy:</dt>
+                    <dd><a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></dd>
+                </dl>
+            </div>
+
+            <div class="processor-card">
+                <h3>2. OpenAI, LLC</h3>
+                <dl class="processor-info">
+                    <dt>Website:</dt>
+                    <dd><a href="https://www.openai.com" target="_blank">openai.com</a></dd>
+
+                    <dt>Service:</dt>
+                    <dd>AI Language Model Processing (GPT)</dd>
+
+                    <dt>Data Processed:</dt>
+                    <dd>Message content submitted by users for translation, rewriting, or AI chat</dd>
+
+                    <dt>Purpose:</dt>
+                    <dd>Provides AI-powered language translation, text transformation, and conversational AI capabilities using GPT models (GPT-4o, GPT-4o-mini)</dd>
+
+                    <dt>Data Location:</dt>
+                    <dd>United States</dd>
+
+                    <dt>Retention:</dt>
+                    <dd>API requests are not stored by Fluent Bot. OpenAI retains data for 30 days for abuse monitoring per their API data usage policies</dd>
+
+                    <dt>Privacy Policy:</dt>
+                    <dd><a href="https://openai.com/privacy" target="_blank">openai.com/privacy</a></dd>
+                </dl>
+            </div>
+
+            <div class="processor-card">
+                <h3>3. Microsoft Corporation (Azure)</h3>
+                <dl class="processor-info">
+                    <dt>Website:</dt>
+                    <dd><a href="https://azure.microsoft.com" target="_blank">azure.microsoft.com</a></dd>
+
+                    <dt>Service:</dt>
+                    <dd>Cloud Infrastructure and Database Hosting</dd>
+
+                    <dt>Data Processed:</dt>
+                    <dd>User account information (Slack user ID, team ID, display name), language preferences, AI provider settings, encrypted configuration data</dd>
+
+                    <dt>Purpose:</dt>
+                    <dd>Provides cloud infrastructure for application hosting, database storage, and service availability</dd>
+
+                    <dt>Data Location:</dt>
+                    <dd>United States</dd>
+
+                    <dt>Retention:</dt>
+                    <dd>Data retained while app is installed; deleted within 30 days of app uninstallation</dd>
+
+                    <dt>Privacy Policy:</dt>
+                    <dd><a href="https://privacy.microsoft.com/privacystatement" target="_blank">privacy.microsoft.com/privacystatement</a></dd>
+
+                    <dt>Security:</dt>
+                    <dd>SOC 2, ISO 27001, GDPR compliant</dd>
+                </dl>
+            </div>
+
+            <div class="processor-card">
+                <h3>4. Slack Technologies, LLC</h3>
+                <dl class="processor-info">
+                    <dt>Website:</dt>
+                    <dd><a href="https://slack.com" target="_blank">slack.com</a></dd>
+
+                    <dt>Service:</dt>
+                    <dd>Platform Provider and Authentication</dd>
+
+                    <dt>Data Processed:</dt>
+                    <dd>User authentication data, workspace information, message delivery, Slack user IDs and team IDs</dd>
+
+                    <dt>Purpose:</dt>
+                    <dd>Provides the platform on which Fluent Bot operates, handles OAuth authentication, and facilitates message delivery between users and the bot</dd>
+
+                    <dt>Data Location:</dt>
+                    <dd>United States (varies by workspace region)</dd>
+
+                    <dt>Privacy Policy:</dt>
+                    <dd><a href="https://slack.com/privacy-policy" target="_blank">slack.com/privacy-policy</a></dd>
+
+                    <dt>Security:</dt>
+                    <dd>SOC 2, ISO 27001, GDPR compliant</dd>
+                </dl>
+            </div>
+
+            <h2>Data Flow Summary</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Sub-Processors</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Message Content</td>
+                        <td>Anthropic, OpenAI</td>
+                        <td>AI processing for translation and text generation</td>
+                    </tr>
+                    <tr>
+                        <td>User Account Info</td>
+                        <td>Microsoft Azure, Slack</td>
+                        <td>Authentication and service delivery</td>
+                    </tr>
+                    <tr>
+                        <td>Preferences</td>
+                        <td>Microsoft Azure</td>
+                        <td>Store user settings and configuration</td>
+                    </tr>
+                    <tr>
+                        <td>OAuth Tokens</td>
+                        <td>Slack, Microsoft Azure</td>
+                        <td>User authentication (encrypted at rest)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Security Measures</h2>
+
+            <p>All sub-processors are required to maintain appropriate security measures:</p>
+            <ul>
+                <li><strong>Encryption:</strong> All data transmitted to sub-processors uses TLS/SSL encryption in transit</li>
+                <li><strong>Access Controls:</strong> Sub-processors implement role-based access controls and authentication</li>
+                <li><strong>Compliance:</strong> All infrastructure sub-processors maintain relevant certifications (SOC 2, ISO 27001)</li>
+                <li><strong>Data Minimization:</strong> We only transmit data necessary for each sub-processor's specific function</li>
+            </ul>
+
+            <h2>Changes to Sub-Processors</h2>
+
+            <div class="highlight">
+                <p><strong>Notification Policy:</strong></p>
+                <p>We will update this page and notify users via email (if available) or Slack notification at least 30 days before:</p>
+                <ul>
+                    <li>Adding new sub-processors that will process customer data</li>
+                    <li>Making material changes to how existing sub-processors handle data</li>
+                </ul>
+                <p>The "Last Updated" date at the top of this page indicates the most recent change.</p>
+            </div>
+
+            <h2>Your Rights</h2>
+
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Object:</strong> If you object to the use of a specific sub-processor, you may stop using the Service or contact us to discuss alternatives</li>
+                <li><strong>Access:</strong> Request information about how sub-processors handle your data</li>
+                <li><strong>Deletion:</strong> Request deletion of your data from our systems (sub-processors have their own retention policies)</li>
+            </ul>
+
+            <h2>Data Processing Addendum (DPA)</h2>
+
+            <p>For enterprise customers or organizations requiring a formal Data Processing Addendum, please contact us at <a href="mailto:k19tech@gmail.com">k19tech@gmail.com</a>.</p>
+
+            <h2>International Data Transfers</h2>
+
+            <p>All sub-processors currently process data within the United States. For users in the European Economic Area (EEA), United Kingdom, or Switzerland:</p>
+            <ul>
+                <li>Data transfers to the United States are based on Standard Contractual Clauses (SCCs) or adequacy decisions</li>
+                <li>Sub-processors implement appropriate safeguards for international data transfers</li>
+                <li>Users can request more information about transfer mechanisms by contacting <a href="mailto:k19tech@gmail.com">k19tech@gmail.com</a></li>
+            </ul>
+
+            <h2>Contact Us</h2>
+
+            <p>For questions about our sub-processors or data processing practices:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:k19tech@gmail.com">k19tech@gmail.com</a></li>
+                <li><strong>Privacy Policy:</strong> <a href="privacy.html">https://viniciusamaraal.github.io/fluent/privacy.html</a></li>
+                <li><strong>Terms of Service:</strong> <a href="terms.html">https://viniciusamaraal.github.io/fluent/terms.html</a></li>
+            </ul>
+
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fluent Bot. All rights reserved.</p>
+        <div style="margin-top: 10px;">
+            <a href="index.html" style="color: #666; text-decoration: none; margin: 0 10px;">Home</a>
+            <a href="privacy.html" style="color: #666; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+            <a href="terms.html" style="color: #666; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+            <a href="support.html" style="color: #666; text-decoration: none; margin: 0 10px;">Support</a>
+        </div>
+    </footer>
+</body>
+</html>
