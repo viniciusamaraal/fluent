@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Fluent Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 50px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4A154B;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            color: #4A154B;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #4A154B;
+            font-weight: 600;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .commands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .command-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+
+        .command-card code {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+
+        .alert {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .alert-icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Support Center</h1>
+            <p>Get help with Fluent Bot</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Getting Started</h2>
+            <p>Welcome to Fluent Bot! Here's everything you need to know to get started.</p>
+
+            <h3>Quick Start Guide</h3>
+            <ol>
+                <li><strong>Install the app</strong> to your Slack workspace</li>
+                <li><strong>Configure your preferences</strong> using <code>/fluent-config</code></li>
+                <li><strong>Start using</strong> the bot with <code>/fluent</code> or <code>/fluent-translate</code></li>
+            </ol>
+
+            <h2>Available Commands</h2>
+
+            <div class="commands-grid">
+                <div class="command-card">
+                    <code>/fluent &lt;text&gt;</code>
+                    <p>Main command for AI chat and translation. Just type naturally and Fluent Bot will understand your intent.</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>"Translate this to Spanish: Hello"</li>
+                        <li>"What's the weather like?"</li>
+                        <li>"Help me write an email"</li>
+                    </ul>
+                </div>
+
+                <div class="command-card">
+                    <code>/fluent-translate &lt;text&gt;</code>
+                    <p>Direct translation to your configured primary language.</p>
+                    <p><strong>Example:</strong></p>
+                    <ul>
+                        <li><code>/fluent-translate Hello, how are you?</code></li>
+                    </ul>
+                </div>
+
+                <div class="command-card">
+                    <code>/fluent-config</code>
+                    <p>Open the configuration modal to set your language preferences and AI provider.</p>
+                </div>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I change my preferred language?</h3>
+                <p>Use <code>/fluent-config</code> and set your primary languages in the configuration modal. You can specify multiple languages.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What AI providers are supported?</h3>
+                <p>Fluent Bot supports:</p>
+                <ul>
+                    <li><strong>Anthropic Claude</strong> (Sonnet 4.5, Haiku 3.5)</li>
+                    <li><strong>OpenAI GPT</strong> (GPT-4o, GPT-4o-mini)</li>
+                </ul>
+                <p>You can switch providers in <code>/fluent-config</code>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Are there any rate limits?</h3>
+                <p>Yes, Fluent Bot has rate limits to ensure fair usage and maintain service quality for all users. If you need higher limits, paid plans will be available soon.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How much does it cost?</h3>
+                <p>Fluent Bot is currently 100% free to use! We plan to offer optional paid plans with higher rate limits and additional features in the future.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data secure?</h3>
+                <p>Yes! We take security seriously:</p>
+                <ul>
+                    <li>All data encrypted in transit (TLS/SSL) and at rest</li>
+                    <li>Hosted on Microsoft Azure with enterprise-grade security</li>
+                    <li>Minimal data collection - only what's needed to provide the service</li>
+                </ul>
+                <p>See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why am I getting rate limited?</h3>
+                <p>Rate limits help us maintain service quality and manage costs for all users. If you're frequently hitting limits, please contact support. We're planning to introduce paid plans with higher limits soon.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I use Fluent Bot in private channels or DMs?</h3>
+                <p>Yes! Fluent Bot works in:</p>
+                <ul>
+                    <li>Public channels</li>
+                    <li>Private channels</li>
+                    <li>Direct messages (DMs)</li>
+                </ul>
+                <p>Just use the slash commands as you normally would.</p>
+            </div>
+
+            <h2>Troubleshooting</h2>
+
+            <div class="alert">
+                <span class="alert-icon">⚠️</span>
+                <strong>Common Issues & Solutions</strong>
+            </div>
+
+            <div class="faq-item">
+                <h3>Commands aren't working</h3>
+                <p>Try these steps:</p>
+                <ol>
+                    <li>Make sure you're using the correct command format: <code>/fluent</code>, <code>/fluent-translate</code>, or <code>/fluent-config</code></li>
+                    <li>Check if the app is installed in your workspace (ask your Slack admin)</li>
+                    <li>Try removing and re-adding the app</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3>Translations are incorrect</h3>
+                <p>AI translations are usually accurate but not perfect. If you're getting poor results:</p>
+                <ul>
+                    <li>Try being more specific in your request</li>
+                    <li>Switch AI providers in <code>/fluent-config</code></li>
+                    <li>Provide more context in your message</li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h2>Still Need Help?</h2>
+                <p>We're here to help! Contact us:</p>
+                <p><strong>📧 Email:</strong> <a href="mailto:support@fluent-bot.com">support@fluent-bot.com</a></p>
+                <p><strong>🐙 GitHub:</strong> <a href="https://github.com/vamaral/fluent-bot/issues" target="_blank">Report an Issue</a></p>
+                <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.9;">We typically respond within 24 hours (business days)</p>
+            </div>
+
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="https://github.com/vamaral/fluent-bot" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://www.anthropic.com/claude" target="_blank">Learn about Claude AI</a></li>
+                <li><a href="https://openai.com/gpt-4" target="_blank">Learn about GPT-4</a></li>
+            </ul>
+
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fluent Bot. All rights reserved.</p>
+    </footer>
+</body>
+</html>
